@@ -1,0 +1,14 @@
+profile = []
+information = []
+
+def retriveInput(q):
+    i = input(q)
+    return i
+
+a1 = retriveInput("What is your name?")
+a2 = retriveInput("What is your age?")
+a3 = retriveInput("What is your weight?")
+
+profile.append(a1)
+profile.append(a2)
+profile.append(a3)
