@@ -3,7 +3,7 @@ name= input("What is your name?")
 print ("What is your age?")
 print ("What is your weight in pounfd?")
 
-print("Hello "+name+" how are you?")
+print("Hello "+name+" how are you?") 
 
 t=str(input("how many days have you worked out?"))
 s=str(input("How long you workout for?"))
