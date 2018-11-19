@@ -9,6 +9,11 @@ print("Hello "+name+" Welcome to Beyond Fitness!")
 t=str(input("how many days have you worked out in the past week?"))
 s=str(input("How long do you usually workout for in minutes ?"))
 
+goals=input("What is your main priority? Your legs, arms or stomach?")
+
+repeat=input("So"+name+"you weigh"+weight+"pounds, are"+age" years old, and want to work out your"+goals+" Correct?")
+
+
 profile = []
 information = []
 
