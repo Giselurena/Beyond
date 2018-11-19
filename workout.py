@@ -1,14 +1,13 @@
 
 name= input("What is your name?")
-print ("What is your age?")
-print ("What is your weight in pounfd?")
+age=input("What is your age?")
+weight=input("What is your weight in pounds?")
+height=input("How tall are you in inches?")
 
-print("Hello "+name+" how are you?") 
+print("Hello "+name+" Welcome to Beyond Fitness!")
 
-t=str(input("how many days have you worked out?"))
-s=str(input("How long you workout for?"))
-n=str(input("How many push ups can you do?"))
-w=str(input("How many sit ups/crunches can you do?"))
+t=str(input("how many days have you worked out in the past week?"))
+s=str(input("How long do you usually workout for in minutes ?"))
 
 profile = []
 information = []
