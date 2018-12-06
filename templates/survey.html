@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Sherman Dining Hall</h1>
+    <p class="text-warning">
+      Make a review!
+    </p>
+</div>
+
+
+
+<form method="POST" action="/survey" style="background-color: #e8e8e8; width: 50%; position: relative; border: 25px solid transparent; margin: auto; padding: 15px; text-align: center; border-radius: 10px;">
+
+  <h2>What is your name?</h2>
+  <input type="textarea" name="name">
+
+  <h2> What is your age?</h2>
+    <input type="textarea" name="age">
+
+  <h2> What is your weight?</h2>
+    <input type="textarea" name="weight">
+
+  <h2> What is your height?</h2>
+    <input type="textarea" name="height">
+
+  <h2>What do you want to work on?</h2>
+  <select name='location'>
+    <option>legs</option>
+    <option>arms</option>
+    <option>stomach</option>
+  </select>
+
+
+  <!-- class="text-center" -->
+  <h2>Give us some feedback:</h2>
+  <textarea
+      class="form-control"
+      name="feedback"
+      rows="4"
+      style="resize: vertical;"
+      cols="40"
+      maxlength="140"></textarea>
+
+  <br>
+  <input type="submit">
+
+
+</form>
+
+<br><br>
+
+
+{% endblock %}

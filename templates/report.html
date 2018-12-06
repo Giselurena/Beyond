@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="bg-primary">Survey Report</h1>
+
+
+<div class="bg-info">
+  Name:{{result.name}} ..
+  <hr>
+  Age: {{result.age}}
+  <hr>
+  Stats: .. {{result.weight}} ..
+  {{result.height}} .. {{result.location}} ..
+   <br>
+   Feedback:<br>
+  {{result.feedback}}
+</div>
+<hr>
+
+
+{% endblock %}
