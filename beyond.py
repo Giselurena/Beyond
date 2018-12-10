@@ -6,7 +6,7 @@
     % pip3 install flask
     % pip3 install flask_oauthlib
     % pip3 install pickledb
-    % python3 girlcode.py
+    % python3 beyond.py
 
     For windows just don't type the "3"s
 
