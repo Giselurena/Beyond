@@ -1,21 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="bg-primary">Survey Report</h1>
+<div class="jumbotron">
 
+  <h1 class="text-center">Post Questionnaire Workout Suggestions</h1>
 
-<div class="bg-info">
-  Name: {{result.name}} ..
+  <div class="">
+    Name: {{result.name}}
+    <br>
+    Age: {{result.age}} <br>
+    Stats: {{result.weight}} lbs | {{result.height}} ins
+    <br><br>
+    Workout Focus: {{result.location}}
+    <br><br>
+    <strong>Workout Suggestions:</strong>
+    <br>
+    {{result.feedback}}
+  </div>
   <hr>
-  Age: {{result.age}}
-  <hr>
-  Stats: .. {{result.weight}} ..
-  {{result.height}} .. {{result.location}} ..
-   <br>
-   Feedback:<br>
-  {{result.feedback}}
+
 </div>
-<hr>
 
 
 {% endblock %}

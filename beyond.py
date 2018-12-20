@@ -133,7 +133,58 @@ def survey():
         feedback = request.form['feedback']
         time = datetime.now()
 
+        if location == "Arm Exercises":
+            feedback = """
+            Doing Pushups is a great way to tone your arms!
+            It is perfect for building muscles in the arms, chest, triceps and the front of the shoulders.
 
+            Instructions:
+            Position your body with your arms straight out, shoulder width apart, abs tight, holding your body in a plank position.
+            Lower your body until your chest is an inch or two above the floor, elbows pulling back at roughly a 45-degree angle.
+            Push your torso away from the ground until your arms lock, then repeat.
+
+            Do 10 of these and Rest for 10 seconds. Do 3 reps of this.
+            """
+        elif location == "Leg Exercises":
+            feedback = """
+            Hello, """ + name + """, welcome to the lower body part exercises!
+            Section: Gluteus
+
+            Squats-
+
+            Make sure to be standing straight with feet hip-width apart. Your feet needs to be apart, directly under your hips, and for balance and posture place your hands on your hips.
+            It is important to flex and tighten your stomach muscles, to produce core muscle balance and strengthen your gluteus.
+            Now, slowly lower down, as if sitting on a chair. Maintain good posture and keep heels on the ground. Make sure to not let your knees move inward or too outward.
+            When reaching the sitting position, slowly straighten your legs.
+            Repeat the movement up to 15 repetitions.
+
+            Lunges-
+
+            For lunges it is essential to keep your upper body straight, with your shoulders back and relaxed and chin up. A great tip is to pick a point to stare at in front of you so you don't keep looking down. Always engage your core, flex and tighten your stomach muscles, to produce core muscle balance and strengthen your spinal cord.
+            Step forward with one leg, lowering your hips until both knees are bent at about a 90-degree angle.
+            Keep balance at all times, the slower you go, the more concentration and perfect posture you will produce for the best results.
+            Repeat up to 15 repetitions back and 15 forward.
+            """
+        else:
+            feedback = """
+            Planks help you to build strength in your core, upper and lower body so its a good full body work out.
+
+            Start by getting into a press-up position.
+            Bend your elbows and rest your weight on your forearms and not on your hands.
+            Your body should form a straight line from shoulders to ankles.
+            Engage your core by sucking your belly button into your spine.
+            Hold this position 30 seconds and Rest for 10 seconds. Do 3 reps
+
+            We’re going to continue on with
+            The Inchworm.
+            This helps work out the shoulders, abs, and back.
+
+            Start standing with feet hip-width apart. Hinge forward at your hips and place your palms on the mat. You can bend your knees if needed to get your palms flat on the floor.
+            Walk your hands forward so that you’re in high plank. Your shoulders should be stacked directly above your wrists.
+            For an extra challenge, add a push-up.
+            Walk your hands back toward feet and stand up.
+
+            """
 
         result = {
             'name':name,
@@ -161,22 +212,22 @@ def survey():
 def show():
     return render_template('show.html',results=results)
 
-@app.route('/person1')
+@app.route('/gisel')
 def person1():
-    return render_template('person1.html')
+    return render_template('gisel.html')
 
 
-@app.route('/person2')
+@app.route('/nana')
 def person2():
-    return render_template('person2.html')
+    return render_template('nana.html')
 
-@app.route('/person3')
+@app.route('/darlene')
 def person3():
-    return render_template('person3.html')
+    return render_template('darlene.html')
 
-@app.route('/person4')
+@app.route('/kamil')
 def person4():
-    return render_template('person4.html')
+    return render_template('kamil.html')
 
 if __name__ == '__main__':
     app.run('127.0.0.1',port=5000)  # development

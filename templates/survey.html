@@ -2,9 +2,9 @@
 {% block content %}
 
 <div class="jumbotron">
-  <h1>Beyond</h1>
-    <p class="text-warning">
-      Make a review!
+  <h1 class="text-center">Beyond</h1>
+    <p class="text-warning text-center">
+      Join us on our journey to fitness.
     </p>
 </div>
 
@@ -12,48 +12,49 @@
 
 <form method="POST" action="/survey" style="background-color: #e8e8e8; width: 50%; position: relative; border: 25px solid transparent; margin: auto; padding: 15px; text-align: center; border-radius: 10px;">
 
-  <h2>What is your name?</h2>
-  <input type="textarea" name="name">
+  <h3>What is your name?</h3>
+  <input type="textarea" name="name" class="form-control">
 
-  <h2> What is your age?</h2>
-    <input type="textarea" name="age">
+  <h3> What is your age?</h3>
+  <input type="textarea" name="age" class="form-control">
 
-  <h2> What is your weight in pounds?</h2>
-    <input type="textarea" name="weight">
+  <h3> What is your weight in pounds?</h3>
+  <input type="textarea" name="weight" class="form-control">
 
-  <h2> How tall are you in inches?</h2>
-    <input type="textarea" name="height">
+  <h3> How tall are you in inches?</h3>
+  <input type="textarea" name="height" class="form-control">
 
-    <br>
-  <h2> How many days have you worked out in the past week?
-    <input type="textarea" name="days">
+  <br>
 
-  <h2> How long do you usually workout for in minutes?
-    <input type="textarea" name="minutes">
+  <h3> How many days have you worked out in the past week? </h3>
+  <input type="textarea" name="days" class="form-control">
 
-  <h2>What is your main priority? Your legs, arms or abdominals?</h2>
-  <select name='location'>
-    <option>legs</option>
-    <option>arms</option>
-    <option>abdominals</option>
+  <h3> How long do you usually workout for in minutes? </h3>
+  <input type="textarea" name="minutes" class="form-control">
+
+  <h3>What is your main priority? Your legs, arms or abdominals?</h3>
+  <select name='location' class="form-control text-center">
+    <option>Leg Exercises</option>
+    <option>Arm Exercises</option>
+    <option>Abdominal Exercises</option>
   </select>
 
-    <div class="popup" onclick="myFunction()">Click me!
+  <!-- <div class="popup" onclick="myFunction()">Click me! -->
 
 
   <!-- class="text-center" -->
-  <h2>Give us some feedback:</h2>
+  <h3>Give us some feedback:</h3>
   <textarea
       class="form-control"
       name="feedback"
       rows="4"
       style="resize: vertical;"
       cols="40"
-      maxlength="140"></textarea>
+      maxlength="140">
+  </textarea>
 
   <br>
-  <input type="submit">
-
+  <input type="submit" class="form-control">
 
 </form>
 

@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="bg-primary">Survey Results</h1>
+<h1 class="text-center">Post Questionnaire Workout Suggestions</h1>
 
 {% for result in results %}
 <div class="bg-info">
-  {{result.name}} .. {{result.age}} .. {{result.weight}} ..
+  {{result.name}}
+  <br>
+  {{result.age}} .. {{result.weight}} ..
   {{result.height}} .. {{result.location}} ..
-   <br>
+  <br>
   {{result.feedback}}
 </div>
 <hr>
